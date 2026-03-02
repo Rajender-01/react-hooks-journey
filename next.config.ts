@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // disable strict mode for learning purpose - it stop the double rendering of the component
+  reactStrictMode: false,
 };
 
 export default nextConfig;
