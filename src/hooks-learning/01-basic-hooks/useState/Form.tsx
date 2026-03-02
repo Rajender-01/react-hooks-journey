@@ -11,7 +11,7 @@ const INITIAL_DATA: FormData = {
   email: "",
 };
 
-const Intermediate = (): React.JSX.Element => {
+const Form = (): React.JSX.Element => {
   const [formData, setFormData] = useState<FormData>(INITIAL_DATA);
   console.log(formData);
 
@@ -64,4 +64,4 @@ const Intermediate = (): React.JSX.Element => {
   );
 };
 
-export default Intermediate;
+export default Form;

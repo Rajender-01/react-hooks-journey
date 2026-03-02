@@ -1,9 +1,15 @@
-import Intermediate from "@/src/hooks-learning/01-basic-hooks/useState/Intermediate"
+import Form from "@/src/hooks-learning/01-basic-hooks/useState/Form";
+import RightLazyInitialization from "@/src/hooks-learning/01-basic-hooks/useState/RightLazyInitialization";
+import WrongLazyInitialization from "@/src/hooks-learning/01-basic-hooks/useState/WrongLazyInitialization";
 
 const page = () => {
   return (
-    <Intermediate/>
-  )
-}
+    <>
+      <Form />
+      <WrongLazyInitialization />
+      <RightLazyInitialization />
+    </>
+  );
+};
 
-export default page
+export default page;
