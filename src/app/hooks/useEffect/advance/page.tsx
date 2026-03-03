@@ -3,6 +3,9 @@ import CleanUp from "@/src/hooks-learning/01-basic-hooks/useEffect/4_CleanUp";
 import ApiCleanUp from "@/src/hooks-learning/01-basic-hooks/useEffect/5_ApiCleanUp";
 import WrongEventListenerCleanUp from "@/src/hooks-learning/01-basic-hooks/useEffect/6a_WrongEventListenerCleanUp";
 import RightEventListenerCleanUp from "@/src/hooks-learning/01-basic-hooks/useEffect/6b_RightEventListenerCleanUp";
+import WebsocketCleanup from "@/src/hooks-learning/01-basic-hooks/useEffect/7_WebsocketCleanup";
+import SetTimeOutCleanUp from "@/src/hooks-learning/01-basic-hooks/useEffect/8_SetTimeOutCleanUp";
+import ObserverCleanUp from "@/src/hooks-learning/01-basic-hooks/useEffect/9_ObserverCleanUp";
 import { useState } from "react";
 
 const Page = () => {
@@ -20,9 +23,12 @@ const Page = () => {
 
       <div className="w-full flex flex-col items-center gap-6">
         {show && <CleanUp />}
-        <ApiCleanUp />
-        <WrongEventListenerCleanUp />
+        {show && <ApiCleanUp />}
+        {show && <WrongEventListenerCleanUp />}
         {show && <RightEventListenerCleanUp />}
+        {show && <WebsocketCleanup />}
+        {show && <SetTimeOutCleanUp />}
+        {show && <ObserverCleanUp />}
       </div>
 
     </div>
