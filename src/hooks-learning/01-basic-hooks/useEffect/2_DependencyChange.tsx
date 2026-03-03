@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 type Count = number;
 const INITIAL_COUNT: Count = 0;
+
 const DependencyChange = (): React.JSX.Element => {
   const [count, setCount] = useState<Count>(INITIAL_COUNT);
 
@@ -15,9 +16,25 @@ const DependencyChange = (): React.JSX.Element => {
   }, [count]);
 
   return (
-    <div>
-      <div>{count}</div>
-      <button onClick={handleIncrement}>Increment</button>
+    <div className="min-h-screen bg-black flex items-center justify-center">
+      <div className="bg-gray-900 text-white px-8 py-6 rounded-lg text-center space-y-5 shadow-lg w-80">
+        
+        <h2 className="text-xl font-semibold text-gray-300">
+          Run on Dependency Change
+        </h2>
+
+        <div className="text-3xl font-bold text-green-400">
+          {count}
+        </div>
+
+        <button
+          onClick={handleIncrement}
+          className="bg-green-500 hover:bg-green-600 transition px-4 py-2 rounded text-black font-medium w-full"
+        >
+          Increment
+        </button>
+
+      </div>
     </div>
   );
 };
