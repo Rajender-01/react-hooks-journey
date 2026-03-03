@@ -20,9 +20,7 @@ const Page = (): React.JSX.Element => {
           isDark ? "bg-gray-900" : "bg-gray-100"
         }`}
       >
-        <h2 className="text-xl font-semibold">
-          useContext Theme Toggle
-        </h2>
+        <h2 className="text-xl font-semibold">useContext Theme Toggle</h2>
 
         <p className="text-lg">
           Current Theme: <span className="font-bold">{theme}</span>

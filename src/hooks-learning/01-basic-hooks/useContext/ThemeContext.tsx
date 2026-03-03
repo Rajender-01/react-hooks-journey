@@ -1,5 +1,5 @@
 "use client";
-import { createContext, useState } from "react";
+import { createContext, useMemo, useState } from "react";
 
 type ThemeType = "light" | "Dark";
 
@@ -17,10 +17,12 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     setTheme((prev) => (prev === "light" ? "Dark" : "light"));
   };
 
-  const value = {
-    theme,
-    toggleTheme,
-  };
+  const value = useMemo(() => {
+    return {
+      theme,
+      toggleTheme,
+    };
+  }, [theme]);
 
   return (
     <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
