@@ -1,6 +1,8 @@
 "use client";
 import CleanUp from "@/src/hooks-learning/01-basic-hooks/useEffect/4_CleanUp";
 import ApiCleanUp from "@/src/hooks-learning/01-basic-hooks/useEffect/5_ApiCleanUp";
+import WrongEventListenerCleanUp from "@/src/hooks-learning/01-basic-hooks/useEffect/6a_WrongEventListenerCleanUp";
+import RightEventListenerCleanUp from "@/src/hooks-learning/01-basic-hooks/useEffect/6b_RightEventListenerCleanUp";
 import { useState } from "react";
 
 const Page = () => {
@@ -19,6 +21,8 @@ const Page = () => {
       <div className="w-full flex flex-col items-center gap-6">
         {show && <CleanUp />}
         <ApiCleanUp />
+        <WrongEventListenerCleanUp />
+        {show && <RightEventListenerCleanUp />}
       </div>
 
     </div>
