@@ -1,12 +1,12 @@
 "use client";
 import { useState } from "react";
 
-type count = number;
-const INITIAL_COUNT: count = 0;
+type Count = number;
+const INITIAL_COUNT: Count = 0;
 
 function heavyCalculation(): number[] {
   console.log("heavy calculation - Right Component");
-  const array: number[] = [];
+  const array: Array<number> = [];
   for (let index = 0; index < 100000000; index++) {
     array.push(index);
   }
@@ -14,8 +14,8 @@ function heavyCalculation(): number[] {
 }
 
 const RightLazyInitialization = (): React.JSX.Element => {
-  const [count, setCount] = useState<count>(INITIAL_COUNT);
-  const [data] = useState(() => heavyCalculation());
+  const [count, setCount] = useState<Count>(INITIAL_COUNT);
+  const [data] = useState<Array<number>>(() => heavyCalculation());
 
   const handleIncrement = (): void => {
     setCount((prev) => prev + 1);
