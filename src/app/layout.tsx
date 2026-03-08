@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "../hooks-learning/01-basic-hooks/useContext/ThemeContext";
 import { AuthProvider } from "../hooks-learning/01-basic-hooks/useContext/AuthContext";
+import { CartProvider } from "../hooks-learning/01-basic-hooks/useContext/CartContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +32,9 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <ThemeProvider>
-          <AuthProvider>{children}</AuthProvider>
+          <AuthProvider>
+            <CartProvider>{children}</CartProvider>
+          </AuthProvider>
         </ThemeProvider>
       </body>
     </html>
