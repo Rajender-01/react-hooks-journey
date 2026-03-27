@@ -1,4 +1,4 @@
-import Parent from "@/src/hooks-learning/03-advance-hooks/useImperativeHandle/basic/Parent"
+import Parent from "@/src/hooks-learning/03-advance-hooks/useImperativeHandle/basicInput/Parent"
 
 const page = () => {
   return (
