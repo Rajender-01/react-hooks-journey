@@ -24,7 +24,7 @@ export default function ThemeExample() {
 
   return (
     <div className="min-h-screen flex items-center justify-center p-6">
-      <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 w-[360px] space-y-6 shadow-lg text-center">
+      <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 w-90 space-y-6 shadow-lg text-center">
 
         <h1 className="text-xl font-semibold tracking-tight">
           useInsertionEffect Theme
