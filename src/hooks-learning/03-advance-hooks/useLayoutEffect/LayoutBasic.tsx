@@ -13,7 +13,7 @@ const LayoutBasic = () => {
 
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100 flex items-center justify-center p-6">
-      <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 w-[400px] space-y-5 shadow-lg text-center">
+      <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 w-100 space-y-5 shadow-lg text-center">
 
         <h1 className="text-xl font-semibold tracking-tight">
           useLayoutEffect Demo
